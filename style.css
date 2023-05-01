@@ -1,0 +1,110 @@
+h1,
+.alert {
+  color: rgba(101, 134, 177, 0.8);
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Helvetica", sans-serif;
+  -webkit-text-stroke: 1px rgba(114, 177, 101, 0.8);
+  -webkit-text-fill-color: rgba(101, 134, 177, 0.8);
+  margin: 10px auto;
+  text-align: center;
+}
+
+.tit {
+  margin: 10px auto;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  width: 700px;
+  height: 200px;
+  margin: 10px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444;
+}
+
+.keyboard {
+  width: 704px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-left: 0;
+  padding-bottom: 0;
+  background: #888888;
+  border: 3px solid #222222;
+  border-radius: 5px;
+}
+
+/* .keyboard-hidden {
+  bottom: -100%;
+} */
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard__key {
+  height: 40px;
+  width: 40px;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 3px;
+  border: none;
+  background: #444444;
+  color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.keyboard__key:hover {
+  background: #357162;
+}
+
+.keyboard__key:active {
+  background: #08ff00;
+  border-radius: 50%;
+}
+.active {
+  background: #357162;
+}
+
+.keyboard__key-wide {
+  width: 12%;
+  background-color: #222222;
+}
+
+.keyboard__key--extra-wide {
+  width: 45%;
+  max-width: 500px;
+}
+
+.keyboard__key-black {
+  background-color: #222222;
+}
+
+.keyboard__key--activatable::after {
+  content: '';
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+  background: #08ff00;
+}
+
+.keyboard__key-dark {
+  background: rgba(0, 0, 0, 0.25);
+}
